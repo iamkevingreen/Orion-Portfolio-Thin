@@ -1,0 +1,20 @@
+<template name="footer">
+  <footer>
+    <div class="wrapper">
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/contact">Contact</a></li>
+          {{#if currentUser }}
+          <li><a href="/admin">Admin</a></li>
+          {{/if}}
+        </ul>
+      </nav>
+      Built with {{> meteorIcon}} and ♥ in NYC
+    </div>
+    <div class="github">
+      <a href="https://github.com/iamkevingreen/Orion-Starter">Fork on Github <i class="fa fa-github"></i></a>
+    </div>
+  </footer>
+</template>

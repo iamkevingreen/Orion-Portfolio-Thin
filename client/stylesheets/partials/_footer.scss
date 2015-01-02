@@ -1,0 +1,40 @@
+footer {
+  width: 100%;
+  background: #000000;
+  padding: 20px 0;
+  color: #cbcbcb;
+  text-align:center;
+  a {
+    svg {
+      fill: #de4f4f;
+    }
+    &:hover {
+      svg {
+        fill: #fff;
+      }
+    }
+  }
+  .github {
+    margin-top: 16px;
+    a {
+      text-decoration: none;
+      &:hover {
+        text-decoration:none;
+      }
+    }
+  }
+  nav {
+    font-size: 11px;
+    ul {
+      margin: 0 0;
+      padding: 0 0;
+    }
+    li {
+      list-style-type: none;
+      margin: 0 0;
+      padding: 8px;
+      display: inline-block;
+      text-transform: uppercase;
+    }
+  }
+}

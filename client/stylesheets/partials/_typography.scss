@@ -1,0 +1,52 @@
+body, html {
+  font-size: 13px;
+  color:#fff;
+}
+
+a {
+  color: #606060;
+  @include transition(all .5s);
+  svg {
+    @include transition(all .5s);
+  }
+  &:hover {
+    color: $linkHover;
+    text-decoration:none;
+    @include transition(all .5s);
+    svg {
+      @include transition(all .5s);
+    }
+  }
+}
+
+h1 {
+  font-size: 4rem;
+  padding: 10px;
+  margin: 0 0;
+}
+h2 {
+  font-size: 1.3rem;
+
+  @media all and (min-width: 920px){
+      font-size: 2.3rem;
+  }
+}
+h5 {
+  font-size: .8rem;
+  line-height: 1.4rem;
+  @media all and (min-width: 420px){
+    font-size: 1rem;
+  }
+}
+h4 {
+  font-size: 3rem;
+}
+
+.inner {
+  i {
+    font-size: 34px;
+    padding: 4px 10px;
+    fill: #fff;
+    color: #fff;
+  }
+}

@@ -1,0 +1,53 @@
+#createEntityForm {
+  .checkbox {
+    width: 30%;
+    float: left;
+    margin-top:4px;
+  }
+  .control-label {
+    display: block;
+    width: 100%;
+    clear: both;
+  }
+  .form-group {
+    clear: both;
+  }
+  .radio + .radio, .checkbox + .checkbox {
+    margin-top: 4px;
+  }
+  input[name="slug"]  {
+    background: rgba(0,0,0,.3);
+  }
+}
+
+// Color Style override
+input[type="color"] {
+  max-width: 100px;
+  padding: 2px;
+}
+
+body {
+  #orion-admin {
+    color: #000;
+    background: #fff;
+    a.btn {
+      background: #000;
+    }
+  }
+}
+
+// Summernote overrides
+
+.note-editor {
+  .btn-default {
+    background-color: transparent;
+    padding: 4px 2px;
+    border-bottom: 0px;
+  }
+  .btn-group {
+    padding-left: 3px;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    background: rgba(255,255,255, .7);
+  }
+}

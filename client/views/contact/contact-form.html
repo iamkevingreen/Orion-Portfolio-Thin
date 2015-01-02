@@ -1,0 +1,18 @@
+<template name="contactForm">
+  {{#autoForm schema=contactFormSchema id="contactForm" type="method" meteormethod="sendEmail"}}
+  <div class="contact-header">
+    <h3>{{ dict 'contactTitle' }}</h3>
+    {{{ dict 'contactContent.content' }}}
+  </div>
+  <fieldset>
+    {{> afQuickField name="name"}}
+    {{> afQuickField name="email"}}
+    {{> afQuickField name="website"}}
+    {{> afQuickField name="message" rows=10}}
+    <div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <!-- <button type="reset" class="btn btn-default">Reset</button> -->
+    </div>
+  </fieldset>
+  {{/autoForm}}
+</template>
