@@ -1,6 +1,4 @@
-# Orion Portfolio Starter - Meteor [ ![Codeship Status for iamkevingreen/orion-starter](https://codeship.com/projects/2a31afa0-620c-0132-3655-7ece8ab0c7e7/status)](https://codeship.com/projects/51977)
-
-[![Code Climate](https://codeclimate.com/github/iamkevingreen/Orion-Starter/badges/gpa.svg)](https://codeclimate.com/github/iamkevingreen/Orion-Starter)
+# Orion Portfolio Thin - Meteor
 
 ##Disclaimer
 
@@ -8,7 +6,7 @@
 
 ---
 
-**A Meteor based CMS with Sass & Bower (blog/portfolio/contact)**
+**A Meteor based portfolio CMS with Sass & Bower (portfolio)**
 
 ## Before Starting
 
@@ -16,21 +14,13 @@ Navigate to `server/fixtures.js` to change the default admin settings to whateve
 
 #### Working Locally
 
-If you are working locally and do not wish to use things like Kadira/S3 please comment them out, otherwise you'll need to create an `env.js` file where you store your local environment variables.
+If you are working locally and do not wish to use things like 3 please comment them out, otherwise you'll need to create an `env.js` file where you store your local environment variables.
 
 ### Additional Configuration
-
-#### Kadira
-
-Navigate to `server/kadira.js` and enter in your unique creds which can be generated on [Kadira](https://kadira.io/)
 
 #### S3 Uploads
 
 All uploads are handled by S3 by default, if you want to do it another way you may need to update various aspects of the app. Default settings need to be updated in `server/s3config.js` in order for uploads to function properly.
-
-#### Contact Form
-
-Update `server\contact.js` and configure your sepcific email settings. Also be sure to set a `process.env.MAIL_URL` variable in either your production server or in the `contact.js` file in order to send email.
 
 ## Start the App
 
