@@ -3,6 +3,9 @@
 /* @import ".meteor/local/bower/bourbon/dist/bourbon"; */
 /* @import ".meteor/local/bower/neat/app/assets/stylesheets/neat"; */
 
+// Font Deck
+@import "partials/external";
+
 // Fix for bower isses
 @import "mixins/bourbon-mix";
 

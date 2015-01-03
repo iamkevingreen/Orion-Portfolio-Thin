@@ -1,6 +1,7 @@
 header {
   text-align: center;
-  min-height: 500px;
+  min-height: 100vh;
+  background: #fff;
   position: relative;
   @include transition(all .5s);
   .centered-v {
