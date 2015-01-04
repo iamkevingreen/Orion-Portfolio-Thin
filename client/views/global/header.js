@@ -26,5 +26,4 @@ Template.header.helpers({
   hasTumblr: function() {
     return orion.dictionary.get('tumblr');
   },
-
 });

@@ -10,3 +10,7 @@ UI.registerHelper('featured', function(image) {
 UI.registerHelper('prettifyDate', function(timestamp) {
   return moment(new Date(timestamp)).fromNow();
 });
+
+UI.registerHelper('currentYear', function() {
+  return (new Date()).getFullYear();
+});
