@@ -34,6 +34,16 @@ orion.addEntity('works', {
 	// 	type: [orion.attributes.image],
 	// 	label: "Detail Images"
 	// },
+	projectType: {
+    type: String,
+		label: "Multiple projects or one?",
+    optional: true,
+    autoform: {
+      afFieldInput: {
+        type: "boolean-checkbox"
+      }
+    }
+  },
 	projects: {
       type: Array,
       optional: true,

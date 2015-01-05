@@ -12,7 +12,7 @@
 }
 header {
   text-align: center;
-  min-height: 100vh;
+  height: 100px;
   background: #fff;
   position: relative;
   @include transition(all .5s);
