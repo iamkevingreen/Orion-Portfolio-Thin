@@ -1,9 +1,9 @@
 {
-  "name": "foodist",
+  "name": "Simple Portfolio",
   "version": "0.0.1",
   "homepage": "https://github.com/iamkevingreen/foodist",
   "authors": [
-    "Kevin Green <kevin@swedenunlimited.com>"
+    "Kevin Green <kevin@districtdomain.com>"
   ],
   "description": "an app for finding all the fewds",
   "license": "MIT",
@@ -15,7 +15,7 @@
     "tests"
   ],
   "dependencies": {
-    "neat": "~1.7.0",
-    "bourbon": ">=4.0"
+    "bourbon": "7e6e3f22d14641a787f021e985781bff4edf9627",
+    "neat": "1.4.0"
   }
 }

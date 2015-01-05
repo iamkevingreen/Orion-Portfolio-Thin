@@ -1,7 +1,7 @@
 
 // bower install components
-/* @import ".meteor/local/bower/bourbon/dist/bourbon"; */
-/* @import ".meteor/local/bower/neat/app/assets/stylesheets/neat"; */
+@import ".meteor/local/bower/bourbon/dist/bourbon";
+@import ".meteor/local/bower/neat/app/assets/stylesheets/neat";
 
 // Font Deck
 @import "partials/external";
@@ -10,17 +10,15 @@
 @import "partials/shake";
 
 // Fix for bower isses
-@import "mixins/bourbon-mix";
+/* @import "mixins/bourbon-mix"; */
 
 // include components so we can use mixins
 @import "partials/variables";
 @import "partials/typography";
-@import "partials/icons";
 @import "partials/global";
 @import "partials/header";
 @import "partials/footer";
 @import "partials/work";
 @import "partials/form";
-@import "partials/posts";
 @import "partials/contact";
 @import "partials/buttons";

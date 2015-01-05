@@ -150,9 +150,6 @@ button + label{
   }
   .content {
     height:100%;
-    @include display(flex);
-    @include align-items(center);
-    @include justify-content(center);
     .align-center {
       max-width: 80%;
     }
