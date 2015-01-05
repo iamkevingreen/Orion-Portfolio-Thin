@@ -30,13 +30,20 @@ orion.addEntity('works', {
     type: String,
     label: "Short Description"
   },
-  // detailImages: {
-  // 	type: [orion.attributes.image],
-  // 	label: "Detail Images"
-  // },
-  projectType: {
+  images: {
+    type: Array,
+    optional: true,
+    minCount: 0,
+  },
+  "images.$": {
+    type: Object
+  },
+  "images.$.name": {
+    type: String
+  },
+  "images.$.toggle": {
     type: String,
-    label: "Multiple projects or one?",
+    label: "Full-width toggle",
     optional: true,
     autoform: {
       afFieldInput: {
@@ -44,18 +51,7 @@ orion.addEntity('works', {
       }
     }
   },
-  projects: {
-    type: Array,
-    optional: true,
-    minCount: 0,
-  },
-  "projects.$": {
-    type: Object
-  },
-  "projects.$.name": {
-    type: String
-  },
-  "projects.$.image": orion.attribute('file', {
+  "images.$.image": orion.attribute('file', {
     label: 'Image',
   }),
 }, {
