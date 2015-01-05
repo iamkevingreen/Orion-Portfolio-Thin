@@ -9,9 +9,11 @@
       <button class="filter rails" data-filter=".rails"><i class="devicon-rails-plain"></i></button>
     </div> -->
     <div id="work" class="mixitup">
-      {{#each works}}
-        {{> workBlock }}
-      {{/each}}
+
+        {{#each works}}
+          {{> workBlock }}
+        {{/each}}
+
 
       <div class="gap"></div>
       <div class="gap"></div>
@@ -20,7 +22,7 @@
 </template>
 
 <template name="workBlock">
-  <div class="mix {{ tools languesUsed }}" style="background: url({{ image.link }}) no-repeat center center; background-size:cover;">
+  <div class="mix" style="background: url({{ image.link }}) no-repeat center center; background-size:cover;">
     <div class="overlay"></div>
     <div class="inner">
       <div class="content">
