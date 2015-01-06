@@ -4,9 +4,16 @@ Template.work.helpers({
     }
 });
 
-Template.workBlock.helpers({
-
-});
+Template.workBlock.rendered = function() {
+  // console.log(this.data);
+  var $container = $('#work').isotope({
+    itemSelector: '.item',
+    layoutMode: 'masonry',
+    masonry: {
+      columnWidth: '.grid-sizer'
+    }
+  });
+};
 
 Template.workSingle.helpers({
 

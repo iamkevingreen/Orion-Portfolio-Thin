@@ -9,11 +9,11 @@
       <button class="filter rails" data-filter=".rails"><i class="devicon-rails-plain"></i></button>
     </div> -->
     <div id="work">
+      <div class="grid-sizer"></div>
       {{#each works}}
         {{> workBlock }}
       {{/each}}
     </div>
-    <script type="text/javascript" src="/packages/iamkevingreen_salvattore.js?32ecd046477f18e51ae01856b394c38d3aa3128a"></script>
   </section>
 </template>
 
@@ -23,11 +23,10 @@
     <div class="inner">
       <div class="content">
         <div class="align-center">
-          <a href="{{ pathFor 'workSingle' }}" class="btn btn-thin"><h2>{{{name}}}</h2></a>
+          <a href="{{ pathFor 'workSingle' }}" class="btn"><h2>{{{name}}}</h2></a>
           <h5>{{role}}</h5>
         </div>
       </div>
     </div>
   </div>
-
 </template>
