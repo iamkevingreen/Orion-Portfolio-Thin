@@ -9,9 +9,11 @@ Template.workBlock.rendered = function() {
   var $container = $('#work').isotope({
     itemSelector: '.item',
     layoutMode: 'masonry',
-    masonry: {
-      columnWidth: '.grid-sizer'
-    }
+    resizable: false, // disable normal resizing
+    transitionDuration: '0.1s'
+    // masonry: {
+    //   columnWidth: 200
+    // }
   });
 };
 
