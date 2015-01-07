@@ -6,3 +6,8 @@ Template.base.rendered = function() {
 
   }
 };
+Template.base.events = {
+  'click .bomb': function(event) {
+    console.log('hi');
+  }
+}
