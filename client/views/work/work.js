@@ -10,10 +10,15 @@ Template.workBlock.rendered = function() {
     itemSelector: '.item',
     layoutMode: 'masonry',
     resizable: false, // disable normal resizing
-    transitionDuration: '0.1s'
+    transitionDuration: '0.1s',
+    resizesContainer: true
     // masonry: {
     //   columnWidth: 200
     // }
+  });
+  $('#work').isotope('layout');
+  $(window).resize(function(){
+    $('#work').isotope('layout');
   });
 };
 
