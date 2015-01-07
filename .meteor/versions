@@ -35,6 +35,7 @@ http@1.0.9
 iamkevingreen:imagesloaded@1.0.4
 iamkevingreen:meteor-devicon@1.0.0
 iamkevingreen:mixitup@2.1.7
+iamkevingreen:styles-sass-orionjs@0.1.1
 id-map@1.0.2
 iron:controller@1.0.6
 iron:core@1.0.6
@@ -75,7 +76,6 @@ momentjs:moment@2.8.4
 mongo@1.0.11
 mongo-livedata@1.0.7
 mquandalle:bower@0.1.11
-mrt:bootswatch-yeti@0.3.8
 natestrauser:font-awesome@4.2.0
 nicolaslopezj:tabular@0.2.2
 npm-bcrypt@0.7.7
@@ -87,7 +87,6 @@ orionjs:core@0.2.1
 orionjs:file-attribute@0.0.3
 orionjs:filesystem@0.0.10
 orionjs:s3@0.0.9
-orionjs:styles@0.1.1
 orionjs:summernote@0.2.2
 random@1.0.2
 reactive-dict@1.0.5
