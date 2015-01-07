@@ -6,15 +6,17 @@ Template.work.helpers({
 
 Template.workBlock.rendered = function() {
   // console.log(this.data);
-  var $container = $('#work').isotope({
-    itemSelector: '.item',
-    layoutMode: 'masonry',
-    resizable: false, // disable normal resizing
-    transitionDuration: '0.1s',
-    resizesContainer: true
-    // masonry: {
-    //   columnWidth: 200
-    // }
+  var $container = $('#work').imagesLoaded(function() {
+    $container.isotope({
+      itemSelector: '.item',
+      layoutMode: 'masonry',
+      resizable: false, // disable normal resizing
+      transitionDuration: '0.1s',
+      resizesContainer: true
+      // masonry: {
+      //   columnWidth: 200
+      // }
+    });
   });
   $('#work').isotope('layout');
   $(window).resize(function(){
