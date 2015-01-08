@@ -22,11 +22,13 @@
     <div class="overlay"></div>
     <div class="inner">
       <div class="content">
+        <a href="{{ pathFor 'workSingle' }}">
         <div class="align-center">
           <a href="{{ pathFor 'workSingle' }}"><h2>{{{name}}}</h2></a>
           <a href="{{ pathFor 'workSingle' }}"><h5>More Info</h5></a>
           <img src="{{ image.url }}" alt="{{name}}" />
         </div>
+      </a>
       </div>
     </div>
   </div>

@@ -83,6 +83,19 @@ Router.map(function() {
     }
   });
 
+  // Info Route
+
+  this.route('info', {
+    path: '/info',
+    fastRender: true,
+    onAfterAction: function() {
+      dict = orion.dictionary.collection.findOne();
+      SEO.set({
+        title: 'Info | ' + dict.seoTitle,
+      });
+    }
+  });
+
 });
 
 // Handle 404s properly

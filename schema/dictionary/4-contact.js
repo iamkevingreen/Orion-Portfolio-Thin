@@ -1,11 +1,23 @@
-orion.dictionary.addDefinition('contactTitle', 'contact', {
+orion.dictionary.addDefinition('name', 'contact', {
   type: String,
-  label: "Contact Page Title",
+  label: "Name",
   optional: true,
 });
 
-orion.dictionary.addDefinition('contactContent', 'contact', {
-  type: orion.attributes.summernote,
-  label: "Additional content above the contact form",
+orion.dictionary.addDefinition('location', 'contact', {
+  type: String,
+  label: "Location",
+  optional: true,
+});
+
+orion.dictionary.addDefinition('phone', 'contact', {
+  type: String,
+  label: "phone",
+  optional: true,
+});
+
+orion.dictionary.addDefinition('email', 'contact', {
+  type: String,
+  label: "email",
   optional: true,
 });
