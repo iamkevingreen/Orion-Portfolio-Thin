@@ -1,20 +1,27 @@
 #work {
   width: 103.125%;
-  /* 990px */
   overflow: hidden;
   margin-left: -1.562%;
-  /* 15px */
   margin-bottom: -1.875em;
-  /* 30px */
 }
   .item {
+    border-top: 1px solid $borderColor;
     width: 30.303%;
-    /* 300px */
     float: left;
     margin: 0 1.515% 1.875em;
-    /* 15px 30px */
+    h2 {
+      display: inline-block;
+    }
+    h5 {
+      display: inline-block;
+      text-align: right;
+      float: right;
+      text-transform: uppercase;
+      padding-top: 4px;
+    }
     img {
       width: 100%;
+      padding-top: 4px;
     }
   }
 @media only screen and ( max-width: 960px ) /* 640px */
