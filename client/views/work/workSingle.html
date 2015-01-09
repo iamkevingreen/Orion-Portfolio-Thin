@@ -1,13 +1,13 @@
 <template name="workSingle">
-  <section class="posts work-single" name="work">
+  <section class="work-single" name="work">
     <div class="wrapper">
-      <div class="row">
+      <div class="row head">
         <div class="col-12">
           <h5>Project</h5>
           <h2>{{name}}</h2>
         </div>
       </div>
-      <div class="row">
+      <div class="row info">
         <div class="col-2">
           <h5>Year</h5>
           <p>{{year}}</p>
@@ -36,7 +36,7 @@
 </template>
 
 <template name="workImages">
-  <div class="row {{#if toggle}}full-width{{/if}}">
+  <div class="row works {{#if toggle}}full-width{{/if}}">
     <div class="col-2">
       <h5>Caption</h5>
       <p>{{name}}</p>

@@ -87,6 +87,7 @@ Router.map(function() {
 
   this.route('info', {
     path: '/info',
+    layoutTemplate: 'layout',
     fastRender: true,
     onAfterAction: function() {
       dict = orion.dictionary.collection.findOne();
