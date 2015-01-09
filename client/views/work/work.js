@@ -24,10 +24,6 @@ Template.workBlock.rendered = function() {
   });
 };
 
-Template.workSingle.helpers({
-
-});
-
 Template.workSingle.rendered = function() {
   $('header').addClass('small');
   $('.content img').wrap( "<div class='content-wrap'></div>");

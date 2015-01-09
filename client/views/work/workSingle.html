@@ -25,6 +25,25 @@
           <p>{{description}}</p>
         </div>
       </div>
+
+
+      {{#each images}}
+          {{>workImages}}
+      {{/each}}
+
     </div>
   </section>
+</template>
+
+<template name="workImages">
+  <div class="row {{#if toggle}}full-width{{/if}}">
+    <div class="col-2">
+      <h5>Caption</h5>
+      <p>{{name}}</p>
+    </div>
+    <div class="col-8">
+      <img src="{{image.url}}" alt=""/>
+    </div>
+
+  </div>
 </template>
