@@ -62,9 +62,11 @@ orion.dictionary.addDefinition('services', 'info', {
 
 // Info Blocks
 
-orion.dictionary.addDefinition('dreamProjects', 'info',
-    orion.attribute('summernote', {
-        label: 'Dream Projects',
-        optional: true
-    })
-);
+orion.dictionary.addDefinition('dreamProjects', 'info', {
+  type: String,
+  label: "Dream Projects",
+  optional: true,
+  autoform: {
+    rows: 5
+  }
+});
