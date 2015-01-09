@@ -17,3 +17,6 @@
     @include span-columns($i);
   }
 }
+.col-2-6 {
+  @include span-columns(2 of 6);
+}

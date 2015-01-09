@@ -12,3 +12,14 @@ body {
   margin: 0 auto;
   padding: 0 20px;
 }
+.single {
+  h5 {
+    border-top: 1px solid $borderColor;
+    line-height: 1.4;
+    padding: 6px 0;
+  }
+  h2 {
+    font-size: 2rem;
+    color: #000;
+  }
+}

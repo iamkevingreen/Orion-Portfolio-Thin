@@ -1,5 +1,43 @@
 <template name="info">
-  <div class="wrapper">
-    ABz
+  <div class="wrapper single">
+    <div class="row head">
+      <div class="col-12">
+        <h5>Approach</h5>
+        <h2>{{dict 'approach'}}</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <img src="http://placekitten.com/300/300" alt="" />
+      </div>
+      <div class="col-6">
+        <div class="row">
+          <h5>About</h5>
+          {{dict 'about'}}
+        </div>
+        <div class="row">
+          <div class="col-2-6">
+            <h5>Contact</h5>
+            <p><a href="mailto:{{dict 'email'}}">{{dict 'email'}}</a></p>
+          </div>
+          <div class="col-2-6">
+            <h5>Social</h5>
+            <p>
+              <a href="{{dict 'twitter'}}">Twitter</a><br />
+              <a href="{{dict 'instagram'}}">Instagram</a><br />
+              <a href="{{dict 'dribbble'}}">Dribbble</a><br />
+              <a href="{{dict 'tumblr'}}">Tumblr</a>
+            </p>
+          </div>
+          <div class="col-2-6">
+            <h5>Services</h5>
+            <p>
+              {{{services}}}
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </div>
 </template>
