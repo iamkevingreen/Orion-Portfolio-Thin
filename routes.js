@@ -56,9 +56,9 @@ Router.map(function() {
       return orion.entities.works.collection.findOne({slug: this.params.slug});
     },
     onAfterAction: function() {
-      post = orion.entities.works.collection.findOne({slug: this.params.slug});
+      work = orion.entities.works.collection.findOne({slug: this.params.slug});
       dict = orion.dictionary.collection.findOne();
-      title = post.projectName + ' | ' + dict.seoTitle;
+      title = work.name + ' | ' + dict.seoTitle;
       SEO.set({
         title: title,
       });

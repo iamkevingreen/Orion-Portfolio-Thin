@@ -1,14 +1,16 @@
 <template name="header">
   <header>
-    <div class="title">
-      <h1><a href="{{ pathFor 'base' }}">{{ dict 'siteName' 'Orion Starter'}}</a></h1>
+    <div class="wrapper">
+      <div class="title">
+        <h1><a href="{{ pathFor 'base' }}">{{ dict 'siteName' 'Orion Starter'}}</a></h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="{{ pathFor 'base' }}">Work</a></li>
+          <li><a href="{{ pathFor 'info' }}">Info</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <ul>
-        <li><a href="{{ pathFor 'base' }}">Work</a></li>
-        <li><a href="{{ pathFor 'info' }}">Info</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
   </header>
 </template>

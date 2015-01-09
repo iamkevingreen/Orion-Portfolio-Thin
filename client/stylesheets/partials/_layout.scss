@@ -1,0 +1,18 @@
+.row {
+  &:before, &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear:both;
+  }
+}
+.col-12 {
+  @include span-columns(12);
+}
+.col-2 {
+  @include span-columns(2);
+}
+.col-6 {
+  @include span-columns(6);
+}

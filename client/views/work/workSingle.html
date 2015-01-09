@@ -1,15 +1,29 @@
 <template name="workSingle">
-  <section class="posts work-single item" name="work">
-    <a href="{{ pathFor 'base' }}">Back</a>
-    <div class="article">
-      <h2>{{name}}</h2>
-      <h5>{{projectRole}}</h5>
-
-      <div class="content">
-      {{{detailText.content}}}
+  <section class="posts work-single" name="work">
+    <div class="wrapper">
+      <div class="row">
+        <div class="col-12">
+          <h5>Project</h5>
+          <h2>{{name}}</h2>
+        </div>
       </div>
-      <div class="link">
-        <a class="btn" href="{{projectLink}}">View Project</a>
+      <div class="row">
+        <div class="col-2">
+          <h5>Year</h5>
+          <p>{{year}}</p>
+        </div>
+        <div class="col-2">
+          <h5>Role</h5>
+          <p>{{role}}</p>
+        </div>
+        <div class="col-2">
+          <h5>Client</h5>
+          <p>{{client}}</p>
+        </div>
+        <div class="col-6">
+          <h5>Description</h5>
+          <p>{{description}}</p>
+        </div>
       </div>
     </div>
   </section>
