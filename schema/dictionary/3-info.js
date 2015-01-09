@@ -70,3 +70,19 @@ orion.dictionary.addDefinition('dreamProjects', 'info', {
     rows: 5
   }
 });
+orion.dictionary.addDefinition('stuffLike', 'info', {
+  type: String,
+  label: "Stuff I Like",
+  optional: true,
+  autoform: {
+    rows: 5
+  }
+});
+orion.dictionary.addDefinition('stuffHate', 'info', {
+  type: String,
+  label: "Stuff I Hate",
+  optional: true,
+  autoform: {
+    rows: 5
+  }
+});
