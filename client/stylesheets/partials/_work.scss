@@ -60,3 +60,11 @@
     }
   }
 }
+
+.animated {
+  opacity: 0;
+  @include transition(all .3s);
+  &.show {
+    opacity: 1;
+  }
+}

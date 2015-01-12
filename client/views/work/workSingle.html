@@ -1,26 +1,26 @@
 <template name="workSingle">
   <section class="work-single single" name="work">
     <div class="wrapper">
-      <div class="row head">
+      <div class="row head animated">
         <div class="col-12">
           <h5>Project</h5>
           <h2>{{name}}</h2>
         </div>
       </div>
       <div class="row info">
-        <div class="col-2">
+        <div class="col-2 animated">
           <h5>Year</h5>
           <p>{{year}}</p>
         </div>
-        <div class="col-2">
+        <div class="col-2 animated">
           <h5>Role</h5>
           <p>{{role}}</p>
         </div>
-        <div class="col-2">
+        <div class="col-2 animated">
           <h5>Client</h5>
           <p>{{client}}</p>
         </div>
-        <div class="col-6">
+        <div class="col-6 animated">
           <h5>Description</h5>
           <p>{{description}}</p>
         </div>
@@ -37,11 +37,11 @@
 
 <template name="workImages">
   <div class="row works {{#if toggle}}full-width{{/if}}">
-    <div class="col-2">
+    <div class="col-2 animated">
       <h5>Caption</h5>
       <p>{{name}}</p>
     </div>
-    <div class="col-8">
+    <div class="col-8 animated">
       <img src="{{image.url}}" alt=""/>
     </div>
 
