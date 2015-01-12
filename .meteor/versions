@@ -78,7 +78,6 @@ npm-bcrypt@0.7.7
 npm-container@1.0.0
 observe-sequence@1.0.4
 ordered-dict@1.0.2
-orionjs:admin@0.6.1
 orionjs:core@0.4.1
 orionjs:file-attribute@0.0.3
 orionjs:filesystem@0.0.13
