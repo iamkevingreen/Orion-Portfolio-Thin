@@ -10,25 +10,9 @@ orion.dictionary.addDefinition('siteDescription', 'site', {
   optional: true,
 });
 
-orion.dictionary.addDefinition('videoURL', 'site', {
-  type: String,
-  label: "Video URL",
-  optional: true,
-});
-
-orion.dictionary.addDefinition('headerImage', 'site',
+orion.dictionary.addDefinition('logo', 'site',
   orion.attribute('file', {
-    label: "Header Fallback Image",
+    label: "Logo",
     optional: true,
   })
 );
-
-
-orion.dictionary.addDefinition('headerBackground', 'site', {
-    type: String,
-    label: "Background Color",
-    optional: true,
-    autoform: {
-      type: 'color',
-    }
-});
