@@ -12,12 +12,6 @@
 
 If you are working locally and do not wish to use things like 3 please comment them out, otherwise you'll need to create an `env.js` file where you store your local environment variables.
 
-### Additional Configuration
-
-#### S3 Uploads
-
-All uploads are handled by S3 by default, if you want to do it another way you may need to update various aspects of the app. Default settings need to be updated in `server/s3config.js` in order for uploads to function properly.
-
 ## Start the App
 
 Run `meteor` in the root to install dependencies and start the server
